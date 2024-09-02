@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Cliente/Servidor</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Cliente/Servidor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Como empezó</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Grandes Proyectos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/S.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Historia </h1>
+                            <span class="subheading">Esta es la historia de la arquitetura Cliente/Servidor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>La arquitectura Cliente/Servidor comenzó a tomar forma en las décadas de 1960 y 1970, en un contexto en el que las computadoras mainframe dominaban la escena informática. En ese tiempo, las operaciones informáticas eran centralizadas, con usuarios que interactuaban con terminales tontos conectados a un mainframe, que realizaba todo el procesamiento y almacenamiento de datos. Este modelo, aunque eficaz, era limitado por la dependencia de un único sistema central. Con el avance de la tecnología, especialmente en la década de 1980, surgió la necesidad de un sistema más flexible y escalable, lo que llevó a la conceptualización y adopción de la arquitectura Cliente/Servidor. Este nuevo modelo permitió que las tareas se distribuyeran entre múltiples sistemas, donde los clientes podían interactuar de manera más directa y personalizada con los servidores.</p>
+                        <p>El desarrollo de redes como Ethernet y el protocolo TCP/IP también fue crucial para el surgimiento de esta arquitectura, ya que permitieron la comunicación eficiente entre clientes y servidores a través de redes locales y globales. Con la expansión de Internet en la década de 1990, la arquitectura Cliente/Servidor se consolidó como el estándar para la mayoría de las aplicaciones distribuidas, sentando las bases para el desarrollo de la web tal como la conocemos hoy en día.</p>
+                        <p>Este modelo no solo revolucionó la forma en que se diseñaban y desplegaban las aplicaciones, sino que también abrió la puerta a nuevas formas de interacción entre sistemas y usuarios, impulsando la creación de aplicaciones web, servicios en la nube, y otros avances tecnológicos que dependen de la interacción constante entre clientes y servidores.</p>
+                        <h1 class="post-title">¿De que Trata la Arquitectura Cliente/Servidor?</h2>
+                        <p>La arquitectura Cliente/Servidor es un modelo de diseño de sistemas distribuidos en el que las tareas o cargas de trabajo se dividen entre los proveedores de recursos o servicios, llamados servidores, y los consumidores de esos servicios, llamados clientes. En este modelo, los clientes son dispositivos o programas que envían solicitudes a un servidor para obtener datos, realizar operaciones o acceder a recursos específicos. El servidor, por su parte, es una máquina que recibe y procesa las solicitudes, proporcionando las respuestas o recursos necesarios al cliente.</p>
+                        <p>Este modelo es fundamental en la informática moderna, ya que permite que múltiples clientes accedan a servicios compartidos, como bases de datos, aplicaciones web, archivos, y recursos de red, a través de una red, como una LAN o Internet. La arquitectura Cliente/Servidor es ampliamente utilizada en aplicaciones web, correo electrónico, bases de datos, y más, permitiendo una gestión eficiente y centralizada de los recursos, así como una distribución efectiva de las cargas de trabajo.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/DIAGRAMA CS.png" alt="..." /></a>
+                        <span class="caption text-muted">
+                            Imagen extraída del blog 
+                            <a href="https://blog.infranetworking.com/modelo-cliente-servidor/" target="_blank">
+                              Infranetworking
+                            </a>.
+                        </span>
+                        <p></p>
+                        <h1 class="post-title">Componentes de la Arquitectura Cliente/Servidor</h2>  
+                        <p></p>
+                        <p>Esta arquitectura o modelo esta compuesta por seis componentes basicos que nos permiten entender de mejor la estructura de este modelo:</p>
+                        <h4 class="post-title">Red</h2>  
+                        <p>La red es el conjunto de infraestructura y tecnología que permite la comunicación entre dispositivos en un sistema cliente-servidor. Se puede tratar de una red local (LAN) o una red de área amplia (WAN), incluyendo la Internet. Su función principal es facilitar el intercambio de datos entre el cliente y el servidor, asegurando que las solicitudes y respuestas sean transmitidas de manera eficiente y confiable.</p>
+                        <h4 class="post-title">Cliente</h2>
+                        <p>El cliente es el dispositivo o aplicación que realiza solicitudes a un servidor para acceder a servicios o recursos. Puede ser un navegador web, una aplicación móvil, o una aplicación de escritorio. El cliente es responsable de la interfaz de usuario y de interactuar con el usuario final, enviando solicitudes al servidor y mostrando la información recibida.</p>      
+                        <h4 class="post-title">Servidor</h2>
+                        <p>El servidor es el componente que proporciona servicios o recursos a los clientes. Puede ser una máquina física o un servicio en la nube, y está diseñado para recibir, procesar solicitudes, y devolver respuestas. Los servidores pueden ofrecer una variedad de servicios, como páginas web, almacenamiento de datos, o servicios de correo electrónico.</p>
+                        <h4 class="post-title">Protocolo</h2>
+                        <p>Un protocolo es un conjunto de reglas y estándares que definen cómo se comunican los dispositivos en una red. Estos protocolos especifican el formato y la secuencia de los mensajes intercambiados, asegurando que la comunicación entre cliente y servidor sea clara y coherente. Ejemplos incluyen HTTP para la web y TCP/IP para la transmisión de datos.</p>    
+                        <h4 class="post-title">Servicios</h2>
+                        <p>Los servicios son las funcionalidades que un servidor ofrece a los clientes. Estos pueden incluir tareas como la entrega de contenido web, la autenticación de usuarios, o la gestión de datos. Los servicios permiten a los clientes acceder a recursos específicos y realizar operaciones que son gestionadas y procesadas por el servidor.</p>
+                        <h4 class="post-title">Bases de Datos</h2>
+                        <p>Una base de datos es un sistema organizado para almacenar y gestionar datos estructurados. Los servidores utilizan bases de datos para guardar, recuperar, y manipular información en respuesta a las solicitudes de los clientes. Las bases de datos pueden ser relacionales, con tablas y relaciones definidas, o no relacionales, con estructuras más flexibles.</p>
+                        <p></p>
+                        <h1 class="post-title">Tipos de Arquitecturas</h2>  
+                        <p>Existen diferentes tipos de arquitecturas según cuántas capas se utilizan para separar y manejar esas responsabilidades. Entre los más comunes están las arquitecturas de dos capas, tres capas y n capas. Cada una ofrece un enfoque distinto para organizar el sistema, facilitando la gestión y escalabilidad.</p>
+                        <h4 class="post-title">Arquitectura en Dos Capas</h2>
+                        <p>En una arquitectura de dos capas, el sistema se divide en dos componentes principales: el cliente y el servidor. El cliente es responsable de la interfaz de usuario y de enviar solicitudes, mientras que el servidor maneja la lógica de negocio y la gestión de datos. En esta arquitectura, el servidor puede ser una base de datos o una aplicación que procesa directamente las solicitudes del cliente. La comunicación entre cliente y servidor ocurre directamente, lo que puede simplificar el diseño pero también puede limitar la escalabilidad y la flexibilidad, ya que toda la lógica y el manejo de datos están centralizados en el servidor.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/dos_capas.jpg" alt="..." /></a>
+                        <span class="caption text-muted">
+                            Imagen extraída del blog 
+                            <a href="https://irle7821.wordpress.com/2013/03/08/1-1-3-aplicaciones-de-2-3-y-n-capas/" target="_blank">
+                              wordpress
+                            </a>.
+                        </span>
+                        <p></p>
+                        <h4 class="post-title">Arquitectura en Tres Capas</h2>
+                        <p>La arquitectura de tres capas introduce una capa adicional entre el cliente y el servidor, dividiendo el sistema en tres componentes: la capa de presentación, la capa de lógica de negocio y la capa de datos. La capa de presentación (o cliente) es responsable de la interfaz de usuario y de interactuar con el usuario final. La capa de lógica de negocio maneja la lógica de procesamiento y toma decisiones basadas en las solicitudes recibidas. Finalmente, la capa de datos (o base de datos) se encarga del almacenamiento y la gestión de los datos. Esta separación permite una mayor modularidad, facilita el mantenimiento y mejora la escalabilidad, ya que cada capa puede evolucionar de manera independiente.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/tres_capas.png" alt="..." /></a>
+                        <span class="caption text-muted">
+                            Imagen extraída del blog 
+                            <a href="https://irle7821.wordpress.com/2013/03/08/1-1-3-aplicaciones-de-2-3-y-n-capas/" target="_blank">
+                              wordpress
+                            </a>.
+                        </span>
+                        <p></p>
+                        <h4 class="post-title">Arquitectura en N Capas</h2>
+                        <P>La arquitectura de n capas (o arquitectura multinivel) es una extensión de la arquitectura de tres capas, en la que se añaden más capas para gestionar aspectos específicos del sistema. Estas capas adicionales pueden incluir la capa de presentación, la capa de lógica de negocio, la capa de acceso a datos, y otros niveles como la capa de servicios, la capa de integración, y la capa de seguridad, entre otras. La arquitectura de n capas proporciona una gran flexibilidad y escalabilidad, permitiendo que diferentes aspectos del sistema se gestionen en capas separadas. Esto facilita la implementación de grandes sistemas empresariales, ya que cada capa puede ser especializada para cumplir funciones específicas y colaborar con otras capas para ofrecer una solución integral.</P>
+                        <a href="#!"><img class="img-fluid" src="assets/img/n_capas.jpg" alt="..." /></a>
+                        <span class="caption text-muted">
+                            Imagen extraída del blog 
+                            <a href="https://irle7821.wordpress.com/2013/03/08/1-1-3-aplicaciones-de-2-3-y-n-capas/" target="_blank">
+                              wordpress
+                            </a>.
+                        </span>
+                        <P></P>
+                        <h1 class="post-title">¿Que nos Depara el Futuro con el Avance de las IA?</h2>
+                        <p>El futuro parece prometedor y dinámico, con la continua evolución de la tecnología y las necesidades de los usuarios. A medida que la computación en la nube, el edge computing y la inteligencia artificial ganan protagonismo, la arquitectura cliente-servidor se adapta y expande para manejar mayores volúmenes de datos y ofrecer servicios más rápidos y personalizados. La flexibilidad y escalabilidad de esta arquitectura la mantienen relevante, permitiendo la integración de nuevas tecnologías y la mejora continua en la experiencia del usuario. En resumen, aunque el panorama tecnológico cambie, la arquitectura cliente-servidor seguirá siendo un pilar fundamental en la construcción de sistemas eficientes y robustos.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
